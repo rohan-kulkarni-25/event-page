@@ -18,6 +18,39 @@ const updateCountersagain = () => {
 }
 
 
+const updateUpcoming = (event, index) => {
+  document.getElementById('upcoming-div').innerHTML = '';
+
+  const divUpcoming = document.createElement('div');
+  divUpcoming.id = 'upid'
+  divUpcoming.dataset.current = index 
+  divUpcoming.classList = 'h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2'
+  const innerHtmlELe = `<img src='${event.img}' class="h-80 w-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
+  <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1 gap-4">
+    <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
+      <p>${event.date}</p>
+      <p>${event.time}</p>
+    </div>
+    <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">${event.title}</p>
+    <p class="text-black text-xl xl:text-base md:text-xs uppercase">SPEAKER : ${event.speaker}</p>
+    <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">${event.description}</p>
+    <div class="flex gap-4">
+      <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs uppercase">${event.platform}</p>
+      <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">${event.duration} mins
+      </p>
+    </div>
+  </div>
+  <p
+    class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
+    <img src="./assets/icons/register.svg" class="h-6 xl:h-5" alt="" srcset=""><a href="${event.link}" class="uppercase">REGISTER</a>
+  </p>
+  <p
+    class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24 uppercase">
+    ${event.type}</p>`;
+  divUpcoming.innerHTML = innerHtmlELe
+  document.getElementById('upcoming-div').append(divUpcoming)
+}
+
 let jsonData;
 const fetchJson = async () => {
   const data = await fetch("./data.json")
@@ -40,35 +73,7 @@ const fetchJson = async () => {
 
       // UPCOMING EVENTS
       const upcoming = data.upcomingEvents;
-      upcoming.forEach(event => {
-        const divUpcoming = document.createElement('div');
-        divUpcoming.classList = 'h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2'
-        const innerHtmlELe = `<img src='${event.img}' class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1 gap-4">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>${event.date}</p>
-            <p>${event.time}</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">${event.title}</p>
-          <p class="text-black text-xl xl:text-base md:text-xs uppercase">SPEAKER : ${event.speaker}</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">${event.description}</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs uppercase">${event.platform}</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">${event.duration} mins
-            </p>
-          </div>
-        </div>
-        <p
-          class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./assets/icons/register.svg" class="h-6 xl:h-5" alt="" srcset=""><a href="${event.link}" class="uppercase">REGISTER</a>
-        </p>
-        <p
-          class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24 uppercase">
-          ${event.type}</p>`;
-        divUpcoming.innerHTML = innerHtmlELe
-        document.getElementById('upcoming-div').append(divUpcoming)
-      })
-
+      updateUpcoming(upcoming[0], 0)
 
       // COMPLETED EVENTS
       const completed = data.completedEvents;
@@ -124,7 +129,6 @@ const fetchJson = async () => {
         return duration;
       }
       const counterDuration = duration()
-      console.log(counterUpcoming, counterCompleted, counterAudience, counterDuration);
       const counters = document.querySelectorAll(".counter");
       counters[0].dataset.target = counterUpcoming;
       counters[1].dataset.target = counterCompleted;
@@ -143,7 +147,6 @@ const viewdetails = (e) => {
   } else {
     e.target.innerText = "VIEW DETAILS";
   }
-
   card.classList.toggle("hidden");
 };
 
@@ -152,4 +155,24 @@ for (let index = 0; index <= value; index++) {
   document.getElementById("upcount").textContent = index;
 }
 
+const leftClick = async () => {
 
+
+
+}
+
+
+const rightClick = async () => {
+  const upcomingCard = document.getElementById('upid')
+  const current = upcomingCard.dataset.current
+  console.log(`right click`);
+  const data = await fetch("./data.json")
+    .then((data) => data.json())
+    .then((data) => {
+      const upcoming = data.upcomingEvents;
+      let updated = current + 1
+      let event = upcoming[updated]
+      console.log(event);
+      updateUpcoming(event, updated)
+    })
+}

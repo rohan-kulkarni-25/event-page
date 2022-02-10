@@ -8,28 +8,16 @@
   ],
   "upcomingEvents": [
     {
-      "img": "./sample.png",
+      "img": "./assets/banners/INTRODUCTION TO API USING POSTMAN.png",
       "date": "12 FEB 2022",
-      "time": "07:30 PM ( IST )",
-      "title": "Web development workshop day 4",
+      "time": "07:00 PM ( IST )",
+      "title": "Introduction to API using POSTMAN",
       "speaker": "ROHAN KULKARNI",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
-      "platform": "GMEET",
+      "description": "In this workshop I am going to explain about API development.We will have a look on request response cycle and also on various methods of requests.We will also do one workshop for CRUD application.",
+      "platform": "YOUTUBE",
       "duration": "60",
       "type": "workshop",
-      "link": "https://events.rohankulkarni.tech"
-    },
-    {
-      "img": "./sample.png",
-      "date": "12 FEB 2022",
-      "time": "07:30 PM ( IST )",
-      "title": "Web development workshop day 4",
-      "speaker": "ROHAN KULKARNI",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
-      "platform": "GMEET",
-      "duration": "60",
-      "type": "workshop",
-      "link": "https://events.rohankulkarni.tech"
+      "link": "https://youtu.be/6ZpTzW10Ceg"
     }
   ],
   "completedEvents": [
