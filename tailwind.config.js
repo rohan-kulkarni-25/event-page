@@ -115,7 +115,7 @@ module.exports = {
         288:'72rem'
       },
     },
-    backgroundImage: {        'event': "url('./events.svg')"  ,"plant":"url('./plant.svg')"    },
+    backgroundImage: { 'event': "url('./assets/icons/events.svg')", "plant": "url('./plant.svg')" },
     fontFamily:{
       'sans-serif':['inter', 'sans-serif']
     },

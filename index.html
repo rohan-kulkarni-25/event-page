@@ -19,12 +19,12 @@
   </style>
 </head>
 
-<body class="bg-pampas-500 font-sans-serif">
+<body class="bg-pampas-500 font-sans-serif scroll-smooth">
 
   <!-- PLAN A CALL CARD -->
    <div
     class="absolute right-2 top-2 bg-pampas-500 p-4 rounded-2xl text-xl flex justify-center items-center gap-4 cursor-pointe hover:scale-105 hover:right-3 cursor-pointer xl:text-lg xl:p-3">
-    <img class="h-6 xl:h-5" src="./plan.svg" alt=""><span>let's plan an event</span>
+    <img class="h-6 xl:h-5" src="./assets/icons/plan.svg" alt=""><a href="#plan">let's plan an event</a>
   </div>
 
   <!-- TOP SECTION STARTS -->
@@ -45,22 +45,22 @@
         <div class="mt-6 grid grid-cols-2 gap-4">
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
-                src="./upcoming.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">upcoming</span></p>
+                src="./assets/icons/upcoming.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">upcoming</span></p>
             <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" id="upcount" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
-                src="./check.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">completed</span></p>
+                src="./assets/icons/check.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">completed</span></p>
             <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
-                src="./auidence.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">audience</span></p>
+                src="./assets/icons/auidence.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">audience</span></p>
             <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
-                src="./duration.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">duration</span></p>
+                src="./assets/icons/duration.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">duration</span></p>
             <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0
             </p>
             <span class="font-semibold text-sm text-gravel-500">hours</span>
@@ -72,7 +72,7 @@
   <!-- TOP SECTION ENDS -->
 
   <!-- TOPIC SECTION STARTS -->
-   <section class="h-126">
+  <section class="h-126" id="topics">
     <div class="p-8 flex flex-col">
       <span class="text-ebony-500 w-fit text-5xl border-b-2 border-gravel-100 pb-2 xl:text-4xl lg:text-3xl">
         topics
@@ -109,7 +109,7 @@
 
   <!-- SCHEDULE AN EVENT SECTION STARTS -->
 
-  <section class="p-4 mt-24 bg-event bg-no-repeat bg-right bg-contain xl:mt-12 md:mt-8">
+  <section id="plan" class="p-4 mt-24 bg-event bg-no-repeat bg-right bg-contain xl:mt-12 md:mt-8">
     <span class="text-ebony-500 text-5xl border-b-2 border-gravel-100 pb-2 xl:text-4xl lg:text-3xl md:text-2xl">schedule an event</span>
     <div class="mt-12 p-8 flex gap-12 justify-start align-middle xl:mt-6 xl:p-6 md:p-4">
       <div
@@ -120,9 +120,10 @@
         <div class="border-b-2 border-dashed border-gravel-500">
           <span class="text-3xl xl:text-2xl md:text-xl">topics</span>
           <div class="p-8 flex justify-start items-center gap-8 xl:gap-4 md:gap-2 md:p-2">
-            <img src="./check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
+            <img src="./assets/icons/check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
             <div class="flex flex-col justify-between gap-4 xl:gap-2">
-              <p class="text-2xl xl:text-xl md:text-sm">you can check <span class="font-bold ">topic</span> section on this page, in that i
+              <p class="text-2xl xl:text-xl md:text-sm">you can check <a href="#topics" class="font-bold ">topic</a> section on this
+                page, in that i
                 have mentioned the
                 topic</p>
               <p class="text-xl xl:text-lg md:text-sm"><span class="font-bold text-2xl xl:text-xl md:text-base">pro tip:</span> i am always open for new topics</p>
@@ -132,21 +133,25 @@
         <div class="border-b-2 border-dashed border-gravel-500">
           <span class="text-3xl xl:text-2xl md:text-xl">about</span>
           <div class="p-8 flex justify-start items-center gap-8 xl:gap-4 md:p-4">
-            <img src="./check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
+            <img src="./assets/icons/check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
             <div class="flex flex-col justify-between gap-4 xl:gap-2">
-              <p class="text-2xl xl:text-xl md:text-sm">you can check my <a href="./" class="font-bold ">linkedin</a> profile i keep that
+              <p class="text-2xl xl:text-xl md:text-sm">you can check my <a href="https://www.linkedin.com/in/rohan-k-2502/"
+                  class="font-bold ">linkedin</a> profile i keep that
                 updated, you can make a short bio from that or can use my <span class="font-bold ">headline</span> as
-                bio, you can grab my picture from <a href="./" class="font-bold">drive</a></p>
+                bio, you can grab my picture from <a
+                  href="https://drive.google.com/drive/folders/1OSgaWGGySyoczSZz60W_wyG4muutgO3S?usp=sharing" target="_blank"
+                  class="font-bold">drive</a></p>
             </div>
           </div>
         </div>
         <div class="border-b-2 border-dashed border-gravel-500">
           <span class="text-3xl xl:text-2xl md:text-xl">contact</span>
           <div class="p-8 flex justify-start items-center gap-8 xl:gap-4 md:p-4">
-            <img src="./check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
+            <img src="./assets/icons/check.svg" class="h-16 bg-blue-500 p-4 rounded-2xl xl:p-2 xl:h-12 md:h-8 md:rounded-xl" alt="">
             <div class="flex flex-col justify-between gap-4 xl:gap-2">
               <p class="text-2xl xl:text-xl md:text-sm">you can email me on <span class="font-bold ">rohank2502@gmail.com</span> about the
-                collaboration or you can get in touch with me on <a href="./" class="font-bold ">linkedin</a></p>
+                collaboration or you can get in touch with me on <a href="https://www.linkedin.com/in/rohan-k-2502/" class="font-bold "
+                  target="_blank">linkedin</a></p>
               <p class="text-2xl xl:text-xl md:text-sm"><span class="font-bold text-2xl xl:text-xl md:text-base">pro tip:</span> linkedin is the best option for quick
                 responses</p>
             </div>
@@ -161,10 +166,13 @@
 
   <!-- SOCIALS SECTION STARTS -->
   <section class="flex justify-center items-center p-4 gap-16 md:gap-8">
-    <a href=""><img src="./twitter.svg" class="h-8" alt=""></a>
-    <a href=""><img src="./github.svg" class="h-8" alt=""></a>
-    <a href=""><img src="./linkedin.svg" class="h-8" alt=""></a>
-    <a href=""><img src="./insta.svg" class="h-8" alt=""></a>
+    <a href="https://twitter.com/rohan_2502" target="_blank"><img src="./assets/icons/twitter.svg" class="h-8" alt=""></a>
+    <a href="https://github.com/rohan-kulkarni-25" target="_blank"><img src="./assets/icons/github.svg" class="h-8"
+        alt=""></a>
+    <a href="https://www.linkedin.com/in/rohan-k-2502/" target="_blank"><img src="./assets/icons/linkedin.svg" class="h-8"
+        alt=""></a>
+    <a href="https://www.instagram.com/rohan_k_2502/" target="_blank"><img src="./assets/icons/insta.svg" class="h-8"
+        alt=""></a>
   </section>
   <!-- SOCIAL SECTION ENDS -->
 

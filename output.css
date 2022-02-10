@@ -1103,6 +1103,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: hidden;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1328,7 +1332,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-event {
-  background-image: url('./events.svg');
+  background-image: url('./assets/icons/events.svg');
 }
 
 .bg-plant {
@@ -1493,6 +1497,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1506,11 +1515,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -1543,14 +1547,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(13 16 33 / var(--tw-text-opacity));
 }
 
-.text-pampas-500 {
-  --tw-text-opacity: 1;
-  color: rgb(250 249 248 / var(--tw-text-opacity));
-}
-
 .text-gravel-500 {
   --tw-text-opacity: 1;
   color: rgb(87 81 89 / var(--tw-text-opacity));
+}
+
+.text-pampas-500 {
+  --tw-text-opacity: 1;
+  color: rgb(250 249 248 / var(--tw-text-opacity));
 }
 
 .text-black {

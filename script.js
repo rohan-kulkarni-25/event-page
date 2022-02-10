@@ -60,7 +60,7 @@ const fetchJson = async () => {
         </div>
         <p
           class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./register.svg" class="h-6 xl:h-5" alt="" srcset=""><a href="${event.link}" class="uppercase">REGISTER</a>
+          <img src="./assets/icons/register.svg" class="h-6 xl:h-5" alt="" srcset=""><a href="${event.link}" class="uppercase">REGISTER</a>
         </p>
         <p
           class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24 uppercase">
@@ -131,7 +131,6 @@ const fetchJson = async () => {
       counters[2].dataset.target = counterAudience;
       counters[3].dataset.target = counterDuration;
       updateCountersagain();
-
     });
 };
 fetchJson();
