@@ -1,0 +1,85 @@
+{
+  "topics": [
+    "web development",
+    "open source",
+    "api development",
+    "git & github",
+    "react projects"
+  ],
+  "upcomingEvents": [
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "link": "https://events.rohankulkarni.tech"
+    },
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "link": "https://events.rohankulkarni.tech"
+    }
+  ],
+  "completedEvents": [
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "audience": "60"
+    },
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "audience": "60"
+    },
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "audience": "60"
+    },
+    {
+      "img": "./sample.png",
+      "date": "12 FEB 2022",
+      "time": "07:30 PM ( IST )",
+      "title": "Web development workshop day 4",
+      "speaker": "ROHAN KULKARNI",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id temporibus minima dolores unde ducimus accusantium.",
+      "platform": "GMEET",
+      "duration": "60",
+      "type": "workshop",
+      "audience": "60"
+    }
+  ]
+}

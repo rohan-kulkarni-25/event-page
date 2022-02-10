@@ -46,22 +46,24 @@
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
                 src="./upcoming.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">upcoming</span></p>
-            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" id="upcount" data-target="5">0</p>
+            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" id="upcount" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
                 src="./check.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">completed</span></p>
-            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="50">0</p>
+            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
-                src="./auidence.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">auidence</span></p>
-            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="500">0</p>
+                src="./auidence.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">audience</span></p>
+            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0</p>
           </div>
           <div class="bg-pampas-500 h-32 w-36 flex justify-start flex-col items-center p-4 rounded-2xl lg:w-32 lg:h-28">
             <p class=" rounded-2xl bg-blue-200 p-4 pt-1 pb-1  text-lg flex justify-center items-center gap-2 xl:text-base"><img
                 src="./duration.svg" class="h-4" alt="" srcset=""> <span class="text-ebony-500">duration</span></p>
-            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="5000">0</p>
+            <p class="counter text-4xl mt-4 font-bold xl:text-3xl lg:text-2xl" data-target="">0
+            </p>
+            <span class="font-semibold text-sm text-gravel-500">hours</span>
           </div>
         </div>
       </div> 
@@ -75,27 +77,8 @@
       <span class="text-ebony-500 w-fit text-5xl border-b-2 border-gravel-100 pb-2 xl:text-4xl lg:text-3xl">
         topics
       </span>
-      <div class="m-16 flex gap-8 flex-wrap justify-evenly cursor-pointer lg:gap-4  lg:m-8">
-        <p
-          class="bg-screamin-green-400 pt-4 pb-4 p-8 rounded-2xl shadow-blue-400 shadow-sm border-2 border-purple-300 font-semibold text-3xl hover:scale-105 hover:duration-500 xl:text-2xl xl:p-6 xl:pb-2 xl:pt-2 flex items-center md:text-lg ">
-          web developement
-        </p>
-        <p
-          class="bg-screamin-green-400 pt-4 pb-4 p-8 rounded-2xl shadow-blue-400 shadow-sm border-2 border-purple-300 font-semibold text-3xl hover:scale-105 hover:duration-500 xl:text-2xl xl:p-6 xl:pb-2 xl:pt-2 flex items-center  md:text-lg ">
-          open source
-        </p>
-        <p
-          class="bg-screamin-green-400 pt-4 pb-4 p-8 rounded-2xl shadow-blue-400 shadow-sm border-2 border-purple-300 font-semibold text-3xl hover:scale-105 hover:duration-500 xl:text-2xl xl:p-6 xl:pb-2 xl:pt-2 flex items-center  md:text-lg">
-          api developement
-        </p>
-        <p
-          class="bg-screamin-green-400 pt-4 pb-4 p-8 rounded-2xl shadow-blue-400 shadow-sm border-2 border-purple-300 font-semibold text-3xl hover:scale-105 hover:duration-500 xl:text-2xl xl:p-6 xl:pb-2 xl:pt-2 flex items-center  md:text-lg">
-          git & github
-        </p>
-        <p
-          class="bg-screamin-green-400 pt-4 pb-4 p-8 rounded-2xl shadow-blue-400 shadow-sm border-2 border-purple-300 font-semibold text-3xl hover:scale-105 hover:duration-500 xl:text-2xl xl:p-6 xl:pb-2 xl:pt-2 flex items-center  md:text-lg">
-          react projects
-        </p>
+      <div class="m-16 flex gap-8 flex-wrap justify-evenly cursor-pointer lg:gap-4  lg:m-8" id="topics-div">
+        <!-- ALL TOPICS WILL GET ADDED HERE WITH HELP OF JAVASCRIPT -->
       </div>
       <span
         class="hidden text-ebony-500 w-fit self-center cursor-pointer  text-xl border-b-2 border-gravel-100 pb-2 hover:bg-blue-400 p-4 pt-2 hover:rounded-2xl hover:font-semibold hover:text-ebony-500">
@@ -108,115 +91,8 @@
   <!-- UPCOMING EVENTS SECTION STARTS -->
   <section class="p-8 md:p-4">
     <span class="text-ebony-500 text-5xl border-b-2 border-gravel-100 pb-2 xl:text-4xl lg:text-3xl md:text-2xl">upcoming events</span>
-    <div class="m-24 mt-24 flex overflow-x-auto gap-8 p-16 xl:mt-8 xl:m-8 xl:p-8 md:m-2">
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">Zoom</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">60 mins</p>
-          </div>
-        </div>
-
-        <p
-          class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./register.svg" class="h-6 xl:h-5" alt="" srcset=""><span class="">REGISTER</span>
-        </p>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">Zoom</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">60 mins</p>
-          </div>
-        </div>
-
-        <p
-          class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./register.svg" class="h-6 xl:h-5" alt="" srcset=""><span class="">REGISTER</span>
-        </p>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div> 
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">Zoom</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">60 mins</p>
-          </div>
-        </div>
-
-        <p
-          class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./register.svg" class="h-6 xl:h-5" alt="" srcset=""><span class="">REGISTER</span>
-        </p>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>      
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">Zoom</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs">60 mins</p>
-          </div>
-        </div>
-
-        <p
-          class="absolute right-2 bottom-2 p-2 rounded-3xl w-48 text-center text-xl font-semibold  cursor-pointer text-ebony-500 bg-screamin-green-400 hover:bg-cornflower-purple-400 hover:duration-500 hover:scale-105 flex justify-evenly items-center ;xl:w-40 xl:text-lg md:text-xs md:relative">
-          <img src="./register.svg" class="h-6 xl:h-5" alt="" srcset=""><span class="">REGISTER</span>
-        </p>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>
+    <div class="m-24 mt-24 flex overflow-x-auto gap-8 p-16 xl:mt-8 xl:m-8 xl:p-8 md:m-2" id="upcoming-div">
+      <!-- All UPCOMING EVENTS WILL BE ADDED HERE WITH HELP OF JAVASCRIPT -->
     </div>
   </section>  
   <!-- UPCOMING EVENTS  SECTION ENDS -->
@@ -224,85 +100,9 @@
   <!-- COMPLETED EVENTS SECTION STARTS -->
    <section class="p-4 ">
     <span class="text-ebony-500 text-5xl border-b-2 border-gravel-100 pb-2 xl:text-4xl lg:text-3xl md:text-2xl">completed events</span>
-    <div id="compevediv" class="m-12 mt-24 flex flex-wrap gap-12 justify-center align-middle xl:mt-12 xl:gap-8 lg:p-8 md:m-2 ">
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1 hidden">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">Zoom</p>
-            <p class="text-ebony-500 font-semibold bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60+ learners</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60 mins</p>
-          </div>
-        </div>
-
-        <button class="vdbtn text-xl self-center rounded-2xl text-pampas-500 font-semibold bg-blue-600 p-4 h-fit xl:text-lg md:text-sm md:p-2"
-        onclick="viewdetails(event)">VIEW DETAILS</button>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1 hidden">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">Zoom</p>
-            <p class="text-ebony-500 font-semibold bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60+ learners</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60 mins</p>
-          </div>
-        </div>
-
-        <button class="vdbtn text-xl self-center rounded-2xl text-pampas-500 font-semibold bg-blue-600 p-4 h-fit xl:text-lg md:text-sm md:p-2"
-        onclick="viewdetails(event)">VIEW DETAILS</button>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>
-      <div
-        class="h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2">
-        <img src="./sample.png" class="h-80 rounded-2xl rounded-bl-2xl xl:h-64 lg:h-56 md:h-40" alt="">
-        <div class="w-fit min-w-3/5 p-4 flex flex-col justify-around xl:gap-2 md:gap-1 hidden">
-          <div class="flex gap-4 text-xl text-gravel-500 font-semibold xl:text-base md:text-xs">
-            <p>12 FEB 2022</p>
-            <p>07:30 PM (IST)</p>
-          </div>
-          <p class="text-4xl text-ebony-500 max-w-192 min-w-fit xl:text-3xl md:text-lg font-semibold ">Web development workshop day 4 </p>
-          <p class="text-black text-xl xl:text-base md:text-xs">SPEAKER : ROHAN KULKARNI</p>
-          <p class=" text-base text-gravel-500 max-w-160 min-w-2/4 xl:text-sm md:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nam magni vel eum fuga nesciunt officia aperiam ut. Repellat asperiores molestias illum voluptas id
-            temporibus minima dolores unde ducimus accusantium.</p>
-          <div class="flex gap-4">
-            <p class="text-ebony-500 text-lg bg-blue-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">Zoom</p>
-            <p class="text-ebony-500 font-semibold bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60+ learners</p>
-            <p class=" text-ebony-500  text-lg  bg-purple-400 p-4 rounded-2xl cursor-pointer xl:text-base md:text-xs flex items-center">60 mins</p>
-          </div>
-        </div>
-
-        <button class="vdbtn text-xl self-center rounded-2xl text-pampas-500 font-semibold bg-blue-600 p-4 h-fit xl:text-lg md:text-sm md:p-2"
-        onclick="viewdetails(event)">VIEW DETAILS</button>
-        <p
-        class="absolute right-2 top-2 text-pampas-500 bg-ebony-500 p-2 rounded-3xl w-48 text-center text-xl font-semibold xl:text-lg xl:w-40 md:text-xs md:w-24">
-        WORKSHOP</p>
-      </div>
+    <div id="complete-div"
+      class="m-12 mt-24 flex flex-wrap gap-12 justify-center align-middle xl:mt-12 xl:gap-8 lg:p-8 md:m-2 ">
+      <!-- ALL EVENT CARDS WILL BE ADDED HERE WITH HELP OF JAVASCRIPT -->
     </div>
   </section>  
   <!-- COMPLETED EVENTS SECTION ENDS -->
