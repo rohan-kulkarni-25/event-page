@@ -12,6 +12,7 @@ const updateCountersagain = () => {
       } else {
         counter.innerText = target;
       }
+
     };
     updateCount();
   });
@@ -77,6 +78,7 @@ const fetchJson = async () => {
 
       // COMPLETED EVENTS
       const completed = data.completedEvents;
+      completed.reverse();
       completed.forEach(event => {
         const completedDiv = document.createElement('div')
         completedDiv.classList = 'h-fit bg-white min-w-fit shadow-gravel-500 shadow-lg justify-evenly  rounded-2xl flex p-8 gap-8 relative items-center lg:flex-col md:p-2 md:gap-2'
@@ -155,24 +157,3 @@ for (let index = 0; index <= value; index++) {
   document.getElementById("upcount").textContent = index;
 }
 
-const leftClick = async () => {
-
-
-
-}
-
-
-const rightClick = async () => {
-  const upcomingCard = document.getElementById('upid')
-  const current = upcomingCard.dataset.current
-  console.log(`right click`);
-  const data = await fetch("./data.json")
-    .then((data) => data.json())
-    .then((data) => {
-      const upcoming = data.upcomingEvents;
-      let updated = current + 1
-      let event = upcoming[updated]
-      console.log(event);
-      updateUpcoming(event, updated)
-    })
-}

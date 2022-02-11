@@ -560,6 +560,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: -0.5rem;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .m-16 {
   margin: 4rem;
 }
@@ -658,6 +662,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .block {
