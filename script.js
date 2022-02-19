@@ -94,7 +94,7 @@ for (let index = 0; index <= value; index++) {
 }
 
 const fetchDB = async () => {
-  const data = await fetch("/update")
+  const data = await fetch("https://event-page-rohan.herokuapp.com/update")
     .then((data) => data.json())
     .then((data) => {
       const completed = data.allevents;
