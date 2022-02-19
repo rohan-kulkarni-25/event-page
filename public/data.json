@@ -103,7 +103,8 @@
       "platform": "YOUTUBE",
       "duration": "60",
       "type": "workshop",
-      "audience": "2200"
+      "audience": "2200",
+      "yt_id": "uwTK2njmVOI"
     },
     {
       "img": "./assets/banners/3feb.jpeg",
@@ -152,7 +153,8 @@
       "duration": "60",
       "type": "workshop",
       "link": "https://youtu.be/6ZpTzW10Ceg",
-      "audience": "434"
+      "audience": "434",
+      "yt_id": "6ZpTzW10Ceg"
     }
   ]
 }

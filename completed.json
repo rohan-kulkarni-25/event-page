@@ -1,0 +1,136 @@
+
+  {
+    "img": "./assets/banners/2ndoct.jpeg",
+    "date": "02 OCTOBER 2021",
+    "time": "04:00 PM ( IST )",
+    "title": "Hacktober fest 2021 with GDSC DAVIET",
+    "speaker": "ROHAN KULKARNI",
+    "description": "In this event I explained about open source.I explained them about contributions in open source.I gave them demo of how they can start their contributions on github.",
+    "platform": "DISCORD",
+    "duration": "45",
+    "type": "workshop",
+    "audience": "89"
+  }
+  {
+    "img": "./assets/banners/18dec.jpeg",
+    "date": "18 DECEMBER 2021",
+    "time": "05:30 PM ( IST )",
+    "title": "Introduction to API 101 by Postman",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "ZOOM",
+    "duration": "60",
+    "type": "workshop",
+    "audience": "20"
+  }
+  {
+    "img": "./assets/banners/27dec.jpeg",
+    "date": "27 DECEMBER 2021",
+    "time": "05:00 PM ( IST )",
+    "title": "Workshop on github plus vscode",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "GMEET",
+    "duration": "90",
+    "type": "workshop",
+    "audience": "50"
+  }
+  {
+    "img": "./assets/banners/21jan.jpeg",
+    "date": "21 JANUARY 2022",
+    "time": "05:30 PM ( IST )",
+    "title": "Introduction to API's using Postman",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "ZOOM",
+    "duration": "60",
+    "type": "workshop",
+    "audience": "60"
+  }
+  {
+    "img": "./assets/banners/1feb.jpeg",
+    "date": "1 FEBRUARY 2022",
+    "time": "05:00 PM ( IST )",
+    "title": "Web development workshop DAY 0",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "AVIYEL",
+    "duration": "90",
+    "type": "talk",
+    "audience": "165"
+  }
+  {
+    "img": "./assets/banners/2feb1.jpeg",
+    "date": "2 FEBRUARY 2022",
+    "time": "04:00 PM ( IST )",
+    "title": "Web development workshop DAY 1",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "AVIYEL",
+    "duration": "90",
+    "type": "workshop",
+    "audience": "135"
+  }
+  {
+    "img": "./assets/banners/2feb2.jpeg",
+    "date": "2 FEBRUARY 2022",
+    "time": "07:00 PM ( IST )",
+    "title": "TODO LIST WITH REACT",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "YOUTUBE",
+    "duration": "60",
+    "type": "workshop",
+    "audience": "2200",
+    "yt_id": "uwTK2njmVOI"
+  }
+  {
+    "img": "./assets/banners/3feb.jpeg",
+    "date": "3 FEBRUARY 2022",
+    "time": "04:00 PM ( IST )",
+    "title": "Web development workshop DAY 2",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "AVIYEL",
+    "duration": "90",
+    "type": "workshop",
+    "audience": "121"
+  }
+  {
+    "img": "./assets/banners/4feb.jpeg",
+    "date": "4 FEBRUARY 2022",
+    "time": "04:00 PM ( IST )",
+    "title": "Web development workshop DAY 3",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "BEVY",
+    "duration": "60",
+    "type": "workshop",
+    "audience": "95"
+  }
+  {
+    "img": "./assets/banners/5feb.jpeg",
+    "date": "5 FEBRUARY 2022",
+    "time": "07:30 PM ( IST )",
+    "title": "Web development workshop DAY 4",
+    "speaker": "ROHAN KULKARNI",
+    "description": "",
+    "platform": "BEVY",
+    "duration": "60",
+    "type": "workshop",
+    "audience": "71"
+  }
+  {
+    "img": "./assets/banners/INTRODUCTION TO API USING POSTMAN.png",
+    "date": "12 FEB 2022",
+    "time": "07:00 PM ( IST )",
+    "title": "Introduction to API using POSTMAN",
+    "speaker": "ROHAN KULKARNI",
+    "description": "In this workshop I am going to explain about API development.We will have a look on request response cycle and also on various methods of requests.We will also do one workshop for CRUD application.",
+    "platform": "YOUTUBE",
+    "duration": "60",
+    "type": "workshop",
+    "link": "https://youtu.be/6ZpTzW10Ceg",
+    "audience": "434",
+    "yt_id": "6ZpTzW10Ceg"
+  }
