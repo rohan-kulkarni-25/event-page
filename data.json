@@ -8,12 +8,12 @@
   ],
   "upcomingEvents": [
     {
-      "img": "./assets/banners/INTRODUCTION TO API USING POSTMAN.png",
-      "date": "12 FEB 2022",
+      "img": "./assets/banners/reactjs19feb.png",
+      "date": "19 FEB 2022",
       "time": "07:00 PM ( IST )",
-      "title": "Introduction to API using POSTMAN",
+      "title": "Introduction to REACT JS",
       "speaker": "ROHAN KULKARNI",
-      "description": "In this workshop I am going to explain about API development.We will have a look on request response cycle and also on various methods of requests.We will also do one workshop for CRUD application.",
+      "description": "In this workshop I will talk about basic features of REACT JS like state,props etc. I will also create one applcation which will be using all these basic features.",
       "platform": "YOUTUBE",
       "duration": "60",
       "type": "workshop",
@@ -103,7 +103,7 @@
       "platform": "YOUTUBE",
       "duration": "60",
       "type": "workshop",
-      "audience": "30"
+      "audience": "2200"
     },
     {
       "img": "./assets/banners/3feb.jpeg",
@@ -140,6 +140,19 @@
       "duration": "60",
       "type": "workshop",
       "audience": "71"
+    },
+    {
+      "img": "./assets/banners/INTRODUCTION TO API USING POSTMAN.png",
+      "date": "12 FEB 2022",
+      "time": "07:00 PM ( IST )",
+      "title": "Introduction to API using POSTMAN",
+      "speaker": "ROHAN KULKARNI",
+      "description": "In this workshop I am going to explain about API development.We will have a look on request response cycle and also on various methods of requests.We will also do one workshop for CRUD application.",
+      "platform": "YOUTUBE",
+      "duration": "60",
+      "type": "workshop",
+      "link": "https://youtu.be/6ZpTzW10Ceg",
+      "audience": "434"
     }
   ]
 }
