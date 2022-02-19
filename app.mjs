@@ -27,10 +27,10 @@ mongoose
     console.log(error);
     process.exit(1);
   });
-
 app.get("/", (req, res) => {
   res.render("home");
 });
+
 
 app.get("/update", async (req, res) => {
   const list = await Event.find({ platform: "YOUTUBE" });
