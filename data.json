@@ -8,16 +8,16 @@
   ],
   "upcomingEvents": [
     {
-      "img": "./assets/banners/reactjs19feb.png",
-      "date": "19 FEB 2022",
-      "time": "07:00 PM ( IST )",
-      "title": "Introduction to REACT JS",
+      "img": "./assets/banners/Copy of Rohan Kulkarni(1).png",
+      "date": "1 MAR 2022",
+      "time": "04:00 PM ( IST )",
+      "title": "GITHUB AND VS CODE WORKSHOP",
       "speaker": "ROHAN KULKARNI",
-      "description": "In this workshop I will talk about basic features of REACT JS like state,props etc. I will also create one applcation which will be using all these basic features.",
+      "description": "In this session we will learn how to contribute to project on github with help of vs code",
       "platform": "YOUTUBE",
       "duration": "60",
       "type": "workshop",
-      "link": "https://youtu.be/6ZpTzW10Ceg"
+      "link": "https://youtu.be/lUFAUWCk_4k"
     }
   ],
   "completedEvents": [
